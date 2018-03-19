@@ -1,7 +1,7 @@
 {
   "name": "momus",
   "description": "The last damn library you'll need for dealing with RESTful API errors and other magic.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
