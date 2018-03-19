@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
-    "test": "cross-env NODE_ENV=test nyc --reporter=lcov mocha --require babel-core/register --recursive",
+    "test": "cross-env NODE_ENV=test nyc --reporter=lcov mocha --reporter=progress --require babel-core/register --recursive --colors --inspect",
     "test:watch": "cross-env NODE_ENV=test npm run test -- --watch",
     "lint": "eslint src test",
     "build": "cross-env NODE_ENV=production babel src --out-dir lib",
