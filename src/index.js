@@ -1,3 +1,3 @@
-const Prometheus = (a, b) => a + b;
+const Momus = (a, b) => a + b;
 
-export default Prometheus;
+export default Momus;

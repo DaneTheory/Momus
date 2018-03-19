@@ -1,4 +1,7 @@
 ![Logo](http://takimag.com/images/uploads/shutterstock_174476873.jpg)
+> Momus: Greek God of Restful API Errors.
+
+---
 
 # Momus
 > _The last damn library you'll need for dealing with RESTful API errors and other magic!_
@@ -13,14 +16,18 @@ TODO: Add description
 ## Features
 > TODO: Add quick note.
 
-TODO: Add features
+* [Yarn](https://yarnpkg.com/en/)
 
 ---
 
 ## Feature Details
 > TODO: Add quick note.
 
-TODO: Add feature details
+###### __ES6__
+> ES6 support provided via [Babel](https://babeljs.io) using `babel-preset-env`.
+
+###### __Yarn__
+> [Yarn](https://yarnpkg.com/en/) for package management.
 
 ---
 
@@ -28,10 +35,14 @@ TODO: Add feature details
 > TODO: Add quick note.
 
 ```
-TODO: Add installation commands
+yarn add momus
 ```
 
-TODO: Add installation info
+_If NPM is more your style, run:_
+
+```
+npm install momus
+```
 
 ---
 
@@ -39,6 +50,18 @@ TODO: Add installation info
 > TODO: Add quick note.
 
 TODO: Add API info
+
+---
+
+## Development
+> TODO: Add quick note.
+
+```
+git clone https://github.com/DaneTheory/Momus.git
+cd Momus/
+yarn
+yarn run prepare
+```
 
 ---
 

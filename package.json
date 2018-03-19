@@ -5,17 +5,13 @@
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
-    "clean:examples": "rimraf examples/ES5",
     "test": "cross-env NODE_ENV=test nyc --reporter=lcov mocha --require babel-core/register --recursive",
     "test:watch": "cross-env NODE_ENV=test npm run test -- --watch",
     "lint": "eslint src test",
     "build": "cross-env NODE_ENV=production babel src --out-dir lib",
-    "build:examples": "cross-env NODE_ENV=production babel examples/ES6 --out-dir examples/ES5",
     "coverage": "cross-env NODE_ENV=test nyc report --reporter=text-lcov | coveralls",
     "coverage:open": "npm run coverage && opn ./coverage/lcov-report/index.html",
-    "prepare": "npm run clean && npm run lint && npm run test && npm run build",
-    "examples:ES5": "node examples/ES5/",
-    "test:examples": "cross-env NODE_ENV=production npm run prepare && npm run clean:examples && npm run build:examples && npm run examples:ES5"
+    "prepare": "npm run clean && npm run lint && npm run test && npm run build"
   },
   "author": "Branden Dane <danetheory@gmail.com> (http://danetheory.com)",
   "homepage": "https://github.com/DaneTheory/Momus",
