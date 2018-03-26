@@ -11,7 +11,8 @@
     "build": "cross-env NODE_ENV=production babel src --out-dir lib",
     "coverage": "cross-env NODE_ENV=test nyc report --reporter=text-lcov | coveralls",
     "coverage:open": "yarn run coverage && opn ./coverage/lcov-report/index.html",
-    "prepare": "yarn run clean && yarn run lint && yarn run test && yarn run build"
+    "prepare": "yarn run clean && yarn run lint && yarn run test && yarn run build",
+    "dev": "cross-env babel-node examples/index.js --service-identity MOMUS --env-mode development"
   },
   "author": "Branden Dane <danetheory@gmail.com> (http://danetheory.com)",
   "homepage": "https://github.com/DaneTheory/Momus",
@@ -59,6 +60,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
+    "joi": "^13.1.2",
     "mocha": "^5.0.0",
     "nyc": "^11.6.0",
     "opn-cli": "^3.1.0",
@@ -69,5 +71,10 @@
     "lib": "lib",
     "test": "test"
   },
-  "dependencies": {}
+  "dependencies": {
+    "convict": "^4.2.0",
+    "express-validation": "^1.0.2",
+    "http-status": "^1.0.1",
+    "pretty-error": "^2.1.1"
+  }
 }

@@ -1,0 +1,24 @@
+{
+
+      "settings": {
+
+        "env": {
+          "doc": "The Environment (i.e. development) your RESTful service is running on. If the Environment variable is not defined, then by default your service will use development. You have complete flexibility in what you prefer your Environment names to be, however they MUST be given as a String. Define Environment either 1. As an argument provided in your NPM scripts/CLI argument using the --env-mode flag (ex: --env-mode [YOUR_PREFERED_ENVIRONMENT]), 2. Using an .env file in your project with the key NODE_ENV (ex: NODE_ENV=[YOUR_PREFERED_ENVIRONMENT]), 3. Or your own custom method using one of many NPM packages used to manage NodeJS runtime variables (i.e node-convict **_recomended_**, dotenv, etc.). Whatever method, the Environment must be available in the NodeJS process env defined as NODE_ENV (ex: console.log(process.env.NODE_ENV) prints the currently active Environment being used by your application/service. Refer to previous methods for overidding or providing your own custom value as the Environment). IMPORTANT: Environment format MUST be equal to String. By default, this is done for you in almost every case. However, if you are using your own custom method for handling validation be sure the Service Identity value is equal to String.",
+          "format": "String",
+          "env": "NODE_ENV",
+          "arg": "env-mode",
+          "default": "development"
+        },
+
+        "serviceIdentity": {
+          "doc": "The identity (i.e. name) of your RESTful service. If a Service Identity is not defined, the project name as defined in your package.json will be used. Else, will fallback to null. Define Service Identity either 1. As an argument provided in your NPM scripts/CLI argument using the --service-identity flag (ex: --service-identity [YOUR_SERVICE_IDENTITY]), 2. Using an .env file in your project with the key SERVICE_IDENTITY (ex: SERVICE_IDENTITY=[YOUR_SERVICE_IDENTITY]), 3. Or your own custom method using one of many NPM packages used to manage NodeJS runtime variables (i.e node-convict **_recomended_**, dotenv, etc.). Whatever method, the Service Identity must be available in the NodeJS process env defined as SERVICE_IDENTITY (ex: console.log(process.env.SERVICE_IDENTITY) prints the Service Identity currently being used by your application. Refer to previous methods for overidding or providing your own custom value as the Service Identity). IMPORTANT: Service Identity format MUST be equal to String. By default, this is done for you in almost every case. However, if you are using your own custom method for handling validation be sure the Service Identity value is equal to String.",
+          "format": "*",
+          "env": "SERVICE_IDENTITY",
+          "arg": "service-identity",
+          "default": null
+        }
+
+      }
+
+
+}
