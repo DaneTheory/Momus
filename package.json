@@ -73,8 +73,8 @@
   },
   "dependencies": {
     "convict": "^4.2.0",
-    "express-validation": "^1.0.2",
+    "express-validation": "^3.0.0",
     "http-status": "^1.0.1",
-    "pretty-error": "^2.1.1"
+    "pretty-error": "^3.0.4"
   }
 }
